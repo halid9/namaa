@@ -46,10 +46,8 @@ const car = {
 #### 1\. باستخدام النقطة `.` (Dot Notation) - الطريقة الأسهل والأشهر
 
 ```javascript
-// كيف أحصل على موديل السيارة؟
 let carModel = car.model; // النتيجة ستكون "500"
 
-// كيف أحصل على لون السيارة؟
 let carColor = car.color; // النتيجة ستكون "white"
 
 console.log("موديل سيارتي هو " + carModel);
@@ -60,7 +58,6 @@ console.log("موديل سيارتي هو " + carModel);
 نستخدم هذه الطريقة عندما يكون اسم الخاصية متغيرًا أو يحتوي على مسافات.
 
 ```javascript
-// طريقة أخرى للحصول على الموديل
 let carModel = car["model"]; // النتيجة ستكون "500"
 
 console.log("لون سيارتي هو " + car["color"]);
@@ -82,7 +79,6 @@ const person = {
   lastName : "Doe",
   age      : 50,
   
-  // هذا هو الـ Method
   fullName : function() {
     return this.firstName + " " + this.lastName;
   }
@@ -99,7 +95,6 @@ const person = {
 نستدعيه تمامًا مثلما نصل إلى خاصية، ولكن مع إضافة قوسين `()` في النهاية، لأننا نقوم بتشغيل دالة.
 
 ```javascript
-// استدعاء الـ method للحصول على الاسم الكامل
 let theFullName = person.fullName(); 
 
 console.log(theFullName); // سيطبع "John Doe"
