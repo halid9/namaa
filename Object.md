@@ -25,7 +25,6 @@ let carYear = 2024;
 **مثال: لنصنع كائن السيارة**
 
 ```javascript
-// إنشاء كائن يمثل سيارة
 const car = {
   type: "Fiat",
   model: "500",
